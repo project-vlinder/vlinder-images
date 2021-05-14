@@ -1,0 +1,5 @@
+FROM registry.access.redhat.com/ubi8/ubi
+
+RUN yum install -y openssl \
+  && curl -fsSl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash \
+  && yum clean all
