@@ -1,0 +1,4 @@
+FROM registry.access.redhat.com/ubi8/ubi
+
+RUN yum install -y openssl git openssh-clients \
+  && yum clean all
